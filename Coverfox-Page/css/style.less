@@ -16,6 +16,9 @@
 @margin:0;
 @selec-bg-hover:#ff7b5e;
 @org-border:1px solid #ff7b5e;
+@org-border-2:2px solid #ff7b5e;
+@color-orange:#ff7b5e;
+@bg-right-box1:#202e38;
 
 body{
 	 color: #314451 !important;
@@ -159,9 +162,129 @@ font-size: 17px;
 }
 }
 .color-new-bg{
-	background: @color-new-bg;
-	left: -30px;
-    position: relative;
-    padding-left:30px ;
-    padding-bottom: 2px;
+background: @color-new-bg;
+left: -30px;
+position: relative;
+padding-left:30px ;
+padding-bottom: 2px;
+}
+.right_fixed_page{
+position: fixed;
+background: #314451;
+height: 1000px;
+top: 0;
+right: 0;
+width:380px;
+color:#fff;
+h1{
+color: #fff;
+font-size: 21px;
+margin: 8px 0 0;
+padding: 0;
+}
+span{
+border-bottom:@org-border-2;
+width:64px;
+display: block;
+margin:5px 0 15px 0;
+}
+.com_box1{
+min-height: 280px;
+padding: 40px;
+}
+.com_box2{
+background: @bg-right-box1;
+min-height: 280px;
+padding: 40px;
+}
+.com_box3{
+min-height: 280px;
+padding: 40px;
+}
+.comp_txtbox{
+width: 246px;
+min-height: 40px;
+padding: 3px;
+background: #6b7075;
+.btn-border-radius;
+border:none;
+margin: 10px 0 30px 0;
+font-size: @font-size;
+display: block;
+}
+a{
+padding: 10px 35px;
+background: #ff7b5e;
+.btn-border-radius;
+border:none;
+color:#fff;
+margin: 10px 0 0 0;
+font-size: @font-size;
+}
+}
+.company_page_t{
+position: relative;
+.text_blog{
+margin: 10px 0;
+font-size:12px; 
+
+}
+.list_company_txt{
+margin: 0 0 30px;
+}
+h2{
+font-size:25px;
+}
+h3{
+font-size:@font-size;
+text-transform: uppercase;
+color:@color-orange;
+}
+ul{
+padding: @padding;
+margin: @margin;
+border:1px solid #333;
+.btn-border-radius;
+}
+li{
+margin:10px 30px;
+}
+.helath_txt{
+	color:#314451;
+	margin:15px 30px;
+}
+}
+#carousel{
+border-top:1px solid #b6bfc3;
+box-shadow:0px -2px 5px #999;
+border-top: 1px solid #b6bfc3;
+box-shadow: 0 -2px 5px #999;
+max-height: 233px;
+
+.slide-txt{
+position:absolute;
+margin: 20px 40px;
+width: 57%;
+text-align: center;
+h1{
+font:@font-size;
+color:@color-orange;
+}
+.text_blog{
+font-size:12.5px;
+}
+}
+.slides-pagination{
+ top: 196px;
+position: absolute;
+text-align: center;
+width: 100%;
+z-index: 3;
+}
+.slides-pagination a{
+border:@org-border-2;
+}
+.slides-pagination a.current{
+background: #ff7b5e;
+}
 }
