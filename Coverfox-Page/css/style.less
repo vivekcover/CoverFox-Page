@@ -1,7 +1,7 @@
 
 @bg-color:#419be0;
 @color-new-bg:#f7fafc;
-@color:#414141;
+@color:#314451;
 @white-color:#fff;
 @btn-bg-top:#194f78;
 @font-size:18px;
@@ -60,14 +60,13 @@ box-shadow:0 -2px 1px #144062 inset;
 
 }
 .blog_left_container{
-padding:0 17px;
 border-left:@border-left;
 border-right:@border-right;
 
 }
 .blog_comment_container{
 border-bottom:@border-bottom;
-padding: 30px 0;
+padding: 30px 15px;
 
 h1{
 font-size:21px;
@@ -132,17 +131,16 @@ bottom:0;
 position: relative;
 }
 li{
-margin: 10px 0;
 list-style: none;
 }
 li a{
 font-size:18px;
 color:@color;
 padding: 8px 40px 8px 30px;
+display:block;
 
 &:hover{
 background:@selec-bg-hover;	
-padding: 8px 40px 8px 30px;
 color:@white-color;
 border-radius: 0 18px 18px 0;
 text-decoration: none;
@@ -264,13 +262,13 @@ bottom: 9px;
 box-shadow: 0 -2px 5px #999;
 max-height: 220px;
 position: fixed;
-width: 63%;
-
+left:0;
+right:380px;
 .slide-txt{
 position:absolute;
 margin: 20px 40px;
-width: 57%;
 text-align: center;
+right:380px;
 h1{
 font:@font-size;
 color:@color-orange;
@@ -386,9 +384,31 @@ background: #ff7b5e;
 .margin_b{
 margin-bottom:500px;
 }
+.bred_menu {
+margin-top: 30px;
+}
+.bred_menu ul{
+margin:@margin;
+padding:@padding;
+}
+.bred_menu li {
+display: inline;
+padding: 0 30px;
+background: url(../images/arrow.png) no-repeat left 3px;
+}
+.bred_menu li:first-child {
+padding-left: 0;
+background: none;
+}
 .heading_top{
 font-weight:300;
 font-size:40px;
 color:#314451;
 margin:20px 0 0 0;
+}
+.pad_left_30{
+	padding: 0 0 0 30px;
+}
+.border-right-1{
+	border-right:@border-right;
 }
