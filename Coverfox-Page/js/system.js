@@ -1,5 +1,4 @@
 $(function(){
-
     $('#slides').superslides({
         hashchange: false,
         play: 200000
@@ -56,8 +55,6 @@ $(function(){
 
 
         container.addClass('disable');
-
-
 
         target.css({width:width, height:height, top:offsetTop, left:offsetLeft}).addClass('reveal');
         setTimeout(function(){
