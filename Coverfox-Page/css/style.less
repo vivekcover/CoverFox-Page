@@ -28,6 +28,8 @@
 body{
 	 color: #314451 !important;
 	 font-weight: 500;
+	 padding: 0;
+	 margin: 0;
     font-family: "Brandon Grotesque","Helvetica Neue",Helvetica,Tahoma,Arial,sans-serif !important;
 }
 .btn-border-radius (@radius: 3px) {
@@ -180,7 +182,7 @@ height: 1000px;
 top: 77px;
 right: 0;
 width:380px;
-color:#fff;
+color:@white-color;
 h1{
 color: #fff;
 font-size: 21px;
@@ -222,7 +224,7 @@ padding: 10px 35px;
 background: #ff7b5e;
 .btn-border-radius;
 border:none;
-color:#fff;
+color:@white-color;
 margin: 10px 0 0 0;
 font-size: @font-size;
 }
@@ -261,7 +263,7 @@ font-size: @font-14;
 }
 }
 #carousel{
-background:#fff;
+background:@white-color;
 border-top: 1px solid #b6bfc3;
 bottom: 0;
 box-shadow: 0 -2px 5px #999;
@@ -503,4 +505,99 @@ left: 20px;
 }
 .arrow_nw img {
 max-height: 50px;
+}
+/* Star Landing Page css ST */
+.star_header_top{
+background: #30407c;
+padding: 15px 0;
+img{
+max-width: 157px;
+min-height: 67px;
+}
+h1{
+	color:@white-color;;
+	margin: @margin;
+	font-size:23px;
+	margin: @margin;
+}
+}
+.benefit_container_page{
+	background: #354789;
+	padding: 20px 0;
+	h1{
+		color:#d6d9e7;
+		margin: @margin;
+		font-size:23px;
+	}
+	ul{
+		margin: @margin;
+		padding: @padding;
+	}
+	li{
+		margin: 15px 0;
+		list-style: none;
+		color:@white-color;
+		font-size:15px;
+	}
+	span{
+		color:#d6d9e7;
+	}
+	.star_form_container{
+	
+		.form_text_box{
+		min-width: 292px;
+		min-height: 40px;
+		padding: 3px;
+		font-size:@font-size;
+		border: 1px solid #000;
+		.btn-border-radius;
+
+		}
+		a{
+			background: #f5a623;
+			color:@white-color;
+			text-transform: uppercase;
+			padding: 7px 30px;
+			font-size: 24px;
+			.btn-border-radius;
+		}
+	}
+	.compair_container_log{
+		background: @white-color;
+		margin: 27px 0 0 0;
+		padding: 20px;
+		.btn-border-radius;
+	}
+}
+.star_health_product{
+margin: 20px 0 0;
+h1{
+	color:#354789;
+	margin: 0 0 0 15px;
+	font-size:23px;
+}
+.desc_box{
+	background: #354789;
+	padding: 18px;
+	color:@white-color;
+	min-height: 131px;
+
+	.btn-border-radius;
+	h3{
+	margin: @margin;
+	font-size:@font-14;
+	text-decoration: underline;
+	}
+}
+.margin-bottom-10{
+	margin:0 0 10px 0
+}
+}
+.logo-top-nw{
+border-bottom: 1px solid rgba(49, 68, 81, 0.15);
+padding: 15px 0;
+background: #f7fafc;
+img{
+	max-width: 180px;
+}
 }
