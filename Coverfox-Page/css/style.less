@@ -263,7 +263,7 @@ font-size: @font-14;
 #carousel{
 background:#fff;
 border-top: 1px solid #b6bfc3;
-bottom: 9px;
+bottom: 0;
 box-shadow: 0 -2px 5px #999;
 max-height: 220px;
 position: fixed;
@@ -482,4 +482,25 @@ position: relative;
 left:0;
 top:66px;
 bottom: 0;
+}
+.arrow_nw {
+position: absolute;
+top: 17%;
+-webkit-transform: translateY(-50%);
+-moz-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+-o-transform: translateY(-50%);
+transform: translateY(-50%);
+opacity: 0.7;
+cursor: pointer;
+z-index: 300;
+}
+.arrow_nw.next {
+right: 20px;
+}
+.arrow_nw.prev {
+left: 20px;
+}
+.arrow_nw img {
+max-height: 50px;
 }
