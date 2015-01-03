@@ -524,10 +524,15 @@ h1{
 .benefit_container_page{
 	background: #354789;
 	padding: 20px 0;
-	h1{
+	h3{
 		color:#d6d9e7;
 		margin: @margin;
-		font-size:23px;
+		font-size:18px;
+	}
+	h2{
+		color:#d6d9e7;
+		margin:21px 0 0 30px;
+		font-size:25px;
 	}
 	ul{
 		margin: @margin;
@@ -537,63 +542,69 @@ h1{
 		margin: 15px 0;
 		list-style: none;
 		color:@white-color;
-		font-size:15px;
+		font-size:24px;
 	}
 	span{
 		color:#d6d9e7;
 	}
-	.star_form_container{
 	
-		.form_text_box{
-		min-width: 292px;
-		min-height: 40px;
-		padding: 3px;
-		font-size:@font-size;
-		border: 1px solid #000;
-		.btn-border-radius;
-		}
-		a{
-			background: #f5a623;
-			color:@white-color;
-			text-transform: uppercase;
-			padding: 7px 30px;
-			font-size: 24px;
-			.btn-border-radius;
-		}
-	}
 	.compair_container_log{
-		background: @white-color;
-		margin: 27px 0 0 0;
-		padding: 20px;
+		background:#fff;
+		margin: 5px 0 0 0;
+		padding: 10px;
 		.btn-border-radius;
 	}
 	.compair_container_log tr:nth-child(even){
 			background: rgba(0, 0, 0, 0.1);
 		}
 	.compair_container_log td{
-		padding: 3px;
+		padding: 3px 8px;
+		font-size:13px;
 	}
-	img{
-		max-width: 90px;
-	}
+	
 }
 .star_health_product{
 margin: 15px 0 0;
-h1{
+ul{
+		margin: 30px 0 0 0;
+		padding: @padding;
+	}
+	li{
+		margin: 15px 0;
+		list-style: none;
+		color:#354789;
+		font-size:24px;
+	}
+	h2{
+		font-size:28px;
+		margin: 0;
+		color:#354789;
+		position: relative;
+
+	}
+	h2:after {
+		border-bottom: 2px solid #354789;
+	    content: "";
+	    left: 0;
+	    position: absolute;
+	    top: 34px;
+	    width: 100px;
+		}
+h3{
 	color:#354789;
-	margin: 0 0 0 15px;
-	font-size:23px;
+	margin: 0 0 5px 15px;
+	font-size:20px;
 }
 .desc_box{
 	background: #354789;
-	padding: 14px;
+	line-height: 1.4em;
+    padding: 10px 15px;
 	font-size:13px;
 	color:@white-color;
-	min-height: 131px;
 
 	.btn-border-radius;
-	h3{
-	margin: @margin;
+	h4{
+	margin: 0 0 5px;
 	font-size:@font-size;
 	text-decoration: underline;
 	}
@@ -611,3 +622,86 @@ img{
 .margin-bottom-10{
 	margin:0 0 10px 0
 }
+.star_form_container{
+	margin: 15px 0 0 30px;
+	label{
+		color:@white-color;
+	}
+	.input_container{
+		position: relative;
+		padding: 0px;
+		input {
+			padding-left:45px;
+		}
+		span{
+			position: absolute;
+			color:#354789;
+			top:13px;
+			left:7px;
+			font-size:18px;
+
+		}
+	}
+	
+		.form_text_box{
+		min-width:80%;
+		padding: 12px;
+		color:#354789;
+		display: block;
+		margin: 0 0 10px;
+		font-size:@font-size;
+		border: 1px solid #ccc;
+		.btn-border-radius;
+		background:#b3bce9;
+		&:focus{
+			background: #fff;
+		}
+		}
+		a{
+			background: #f5a623;
+			color:@white-color;
+			display: block;
+			text-transform: uppercase;
+			padding: 13px 67px;
+			text-align: center;
+			font-size: 20px;
+			max-width: 292px;
+			.btn-border-radius;
+		}
+	}
+	.tab_bg{
+		h4{
+			margin: 0;
+		}
+	}
+	.header_txt{
+	font-size: 15px;
+    letter-spacing: 2px;
+    margin: 10px 0 0;
+    text-transform: uppercase;
+	}
+	
+	.btn-cfox {
+	background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,rgba(0, 0, 0, 0)),color-stop(100%,rgba(0, 0, 0, 0.05)));
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.05));
+	background-image: -moz-linear-gradient(transparent,rgba(0,0,0,0.05));
+	background-image: -o-linear-gradient(transparent,rgba(0,0,0,0.05));
+	background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.05));
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	&.orange {
+	background-color: rgb(247, 127, 84);
+	border: 1px solid rgb(174, 121, 38);
+	width: 100%;
+	font-size: 20px;
+	margin-top: 0px;
+	padding: 15px;
+	color: #fff;
+	background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,rgba(0, 0, 0, 0)),color-stop(100%,rgba(0, 0, 0, 0.1)));
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.1));
+	background-image: -moz-linear-gradient(transparent,rgba(0,0,0,0.1));
+	background-image: -o-linear-gradient(transparent,rgba(0,0,0,0.1));
+	background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.1));
+	}
+	}
