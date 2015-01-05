@@ -35,15 +35,6 @@ $(function(){
         container.removeClass('disable');
 
     });
-	$(document).on('click','.menu-items > li',function(){
-        if($(this).hasClass('active')) {
-            $(this).removeClass('active');
-        }
-        else {
-            $('.menu-items > li').removeClass('active');
-            $(this).addClass('active');
-        }
-    });
 
 
     $(document).on('click', '.testimonial-item', function(){

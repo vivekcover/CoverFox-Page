@@ -475,6 +475,7 @@ ul.why-coverfox {
 
 #slides {
   position: relative;
+  max-height: 380px !important;
 }
 #slides .slides-container {
   display: none;
@@ -522,8 +523,9 @@ ul.why-coverfox {
 .slides-pagination a {
   border: 2px solid #ba4e37;
   border-radius: 15px;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
+  color:#fff;
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
@@ -534,9 +536,12 @@ ul.why-coverfox {
   margin: 2px;
   overflow: hidden;
   text-indent: -100%;
+  outline:none;
 }
 .slides-pagination a.current {
   background: #ff7b5e;
+  color:#ff7b5e;
+  outline:none;
 }
 
 .blog-wrapper{
@@ -703,9 +708,26 @@ h2{
 background:#fff;
 bottom: 0;
 left: 0;
+li{
+  overflow: visible !important;
+  img{
+    position:static!important;
+right:0;
+left:0!important;
+top:0!important;
+bottom:0!important;
+width: 100%!important;
+max-height:300px !important;
+  }
+}
 .slide-txt{
 position:absolute;
 right:300px;
+left:0;
+top:0;
+bottom:0;
+width: 100%;
+
 }
 }
 
