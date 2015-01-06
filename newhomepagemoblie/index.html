@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Coverfox</title>
-
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -188,61 +190,58 @@
                         <h3> Hear what they are saying.</h3>
                  </div>
                  <div class="clearfix"></div>
-               <div id="carousel">
-                <div class="carousel-wrapper">
-                    <div class="carousel-items">
-                        <div id="slides">
-                            <div class="slides-control">
-                                <ul class="slides-container">
-                                    <li >
-                                        <div class="slide-txt">
-                                           <div class="col-md-12 col-xs-12">
-                                             <div class="col-md-3 col-xs-6">
-                                                 <img src="http://cfstatic.org/static/home/img/t1.jpg" class="img-responsive">
-                                             </div>
-                                             <div class="col-md-9 col-xs-6">
-                                                 <h1>"Shweta was extremely helpful and patient. She addressed all doubts and concerns politely. Definitely felt good about my decision"</h1> <br><br>
-                                                 <h4>-Mrunmayee</h4>
-                                             </div>
-                                             <div class="clearfix"></div>
-                                         </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="slide-txt">
-                                            <div class="col-md-12 col-xs-12">
-                                                 <div class="col-md-3 col-xs-6">
-                                                     <img src="http://cfstatic.org/static/home/img/t1.jpg" class="img-responsive">
-                                                 </div>
-                                                 <div class="col-md-9 col-xs-6">
-                                                     <h1>"Shweta was extremely helpful and patient. She addressed all doubts and concerns politely. Definitely felt good about my decision"</h1> <br><br>
-                                                     <h4>-Mrunmayee</h4>
-                                                 </div>
-                                                 <div class="clearfix"></div>
-                                             </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                    <div class="slide-txt">
-                                        <div class="col-md-12 col-xs-12">
-                                         <div class="col-md-3 col-xs-6">
-                                             <img src="http://cfstatic.org/static/home/img/t1.jpg" class="img-responsive">
-                                         </div>
-                                         <div class="col-md-9 col-xs-6">
-                                             <h1>"Shweta was extremely helpful and patient. She addressed all doubts and concerns politely. Definitely felt good about my decision"</h1> <br><br>
-                                             <h4>-Mrunmayee</h4>
-                                         </div>
-                                         <div class="clearfix"></div>
-                                     </div>
-                                    </div>
-                                </li>
-                            </ul></div>
-                    
-                </div>
-                </div>
-
-                <div class="clearfix"></div>
-            </div>
+               <div id="demo">
+					<div class="container">
+					  <div class="row">
+						<div class="span12">
+						  <div id="owl-example">
+							<div class="item darkCyan">
+							  <div class="slide-txt">
+								   <div class="col-md-12 col-xs-12">
+									 <div class="col-md-6 col-xs-6">
+										 <img src="http://cfstatic.org/static/home/img/t1.jpg" class="img-responsive">
+									 </div>
+									 <div class="col-md-6 col-xs-6">
+										 <h1>"Shweta was extremely helpful and patient. She addressed all doubts and concerns politely. Definitely felt good about my decision"</h1> <br>
+										 <h4>-Mrunmayee</h4>
+									 </div>
+									 <div class="clearfix"></div>
+								 </div>
+								</div>
+							</div>
+							<div class="item forestGreen">
+							 <div class="slide-txt">
+								   <div class="col-md-12 col-xs-12">
+									 <div class="col-md-6 col-xs-6">
+										 <img src="http://cfstatic.org/static/home/img/t1.jpg" class="img-responsive">
+									 </div>
+									 <div class="col-md-6 col-xs-6">
+										 <h1>"Shweta was extremely helpful and patient. She addressed all doubts and concerns politely. Definitely felt good about my decision"</h1> <br>
+										 <h4>-Mrunmayee</h4>
+									 </div>
+									 <div class="clearfix"></div>
+								 </div>
+								</div>
+							</div>
+							<div class="item orange">
+							  <div class="slide-txt">
+								   <div class="col-md-12 col-xs-12">
+									 <div class="col-md-6 col-xs-6">
+										 <img src="http://cfstatic.org/static/home/img/t1.jpg" class="img-responsive">
+									 </div>
+									 <div class="col-md-6 col-xs-6">
+										 <h1>"Shweta was extremely helpful and patient. She addressed all doubts and concerns politely. Definitely felt good about my decision"</h1> <br>
+										 <h4>-Mrunmayee</h4>
+									 </div>
+									 <div class="clearfix"></div>
+								 </div>
+								</div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
                  <div class="clearfix"></div>
              </div>
          </div>
@@ -403,5 +402,18 @@
 <script src="js/jquery.animate-enhanced.min.js"></script>
 <script src="js/jquery.superslides.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/system.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+ <script>
+
+    $(document).ready(function($) {
+      $("#owl-example").owlCarousel({
+        items:3
+      });
+    });
+
+
+    $("body").data("page", "frontpage");
+
+    </script>
 </body>
 </html>
