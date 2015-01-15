@@ -1,0 +1,260 @@
+//colors
+@font-face{
+	font-family:Brandon Grotesque;
+	font-weight:300;
+	src:url(../fonts/BGTHIN.otf)
+}
+@font-face{
+font-family:Brandon Grotesque
+;src:url(../fonts/BGREG.otf)
+}
+@font-face{
+font-family:Brandon Grotesque;
+font-weight:700;
+src:url(../fonts/BGBOLD.otf)
+}
+@dark:#314451;
+@orange:#ff6127;
+@orange-dark:#ff1800;
+@blue:#0076ff;
+@muted-blue:#50a8ed;
+@yellow:#ffd700;
+@muted-yellow:#ffd974;
+@grey-1:#f7fafc;
+@grey-2:#efeff4;
+@grey-3:#eaeef1;
+@grey-4:#8c9aa5;
+@whatsup-green:#7ed321;
+@pop-green:#62deda;
+@pop-red:#ff7a7a;
+@white-color:#fff;
+@discount-color:#2dc483;
+@baseFont: 'Brandon Grotesque','Helvetica Neue',Helvetica,Tahoma,Arial,sans-serif !important;
+
+body, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  font-family:@baseFont;
+  color:#314451;
+}
+.btn-border-radius (@radius: 3px) {
+-webkit-border-radius: @radius;
+-moz-border-radius: @radius;
+border-radius: @radius;
+}
+
+.pnone{
+	padding:0 !important;
+}
+.discount-bg{
+	background: @discount-color;
+	color:@white-color;
+}
+.pnone-popup{
+	padding:24px 32px  !important;
+	display: none;
+}
+.pnone-right{
+	padding-right:0 !important;
+}
+.color-blue{
+	color:@blue;
+}
+.bg-color-blue{
+	background:@blue;
+}
+.bg-red{
+	background: @pop-red !important;
+}
+.color-orange{
+	color:@orange !important;
+}
+.bg-clr{
+	background: @grey-1 !important;
+	color:@dark !important;
+	font-weight: bold;
+}
+.bg-add{
+	background: @grey-1;
+}
+.whatsup-green-btn{
+background:#538e12 !important;
+max-width: 100% !important;
+}
+.white-color{
+	color:@white-color;
+}
+.mar-0{
+	margin: 0 !important;
+}
+.card{
+	padding:24px 16px;
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.12);
+	h1{
+		font-size:24px;
+		margin: 0;
+	}
+	h2{
+		font-size: 18px;
+	}
+	h3{
+		font-size: 20px;
+		margin: 0;
+	}
+	h4{
+		font-size: 16px;
+		a{
+			color:@orange;
+		}
+	}
+	p{
+		font-size: 14px;
+	}
+	h5{
+		font-size: 16px;
+		font-weight: bold;
+		color:@blue !important;
+	}
+	span{
+		color:@grey-3;
+		position: relative;
+		text-align: center;
+		margin: 0 20px;
+		top:6px;
+		left: 61px;
+		&:before{
+			left: 23px;
+			position: absolute;
+			top: 0px;
+			width: 70px;
+			border-bottom: 1px solid @grey-3;
+			content: '';
+			
+		}
+		&:after{
+			left: -78px;
+			position: absolute;
+			top: 0px;
+			width: 70px;
+			border-bottom: 1px solid @grey-3;
+			content: '';
+			right: 30px;
+		}
+		
+		
+	}
+	.btn_mobile a{
+		background: @blue;
+		color:@white-color;
+		padding: 8px 22px;
+		display: block;
+		max-width: 122px;
+		text-align: center;
+		.btn-border-radius;
+		font-size: 14px;
+
+	}
+	.from-section{
+			font-size:18px;
+			margin: 20px 0;
+			input{
+				width:98%;
+				.btn-border-radius;
+				background: @grey-1;
+				border:1px solid @grey-3;
+				height: 35px;
+				margin: 5px 0;
+			}
+			select{
+				width:60%;
+				.btn-border-radius;
+				background: @grey-1;
+				border:1px solid @grey-3;
+				height: 35px;
+				margin: 10px 0;
+				display: block;
+				outline:none;
+				color:@grey-4;
+				font-size:14px;
+			}
+		}
+		.selct_box_txt{
+			font-size:18px;
+			color:@grey-4;
+			.error_txt{
+				color:@orange-dark;
+				margin: 5px 0 15px;
+			}
+		}
+		.btn-container_mobile{
+			margin: 20px auto;
+			text-align: center;
+			a{
+				background: @pop-green;
+				.btn-border-radius;
+				font-size: 18px;
+				font-weight: bold;
+				color:@white-color;
+				padding: 8px 22px;
+				display: block;
+			}
+		}
+		.mar-b{
+			margin:0 0 20px;
+		}
+		.choose-add{
+			font-size:17px;
+			text-transform: uppercase;
+
+			img{
+				max-width: 25px;
+				margin: 0 5px 0 0;
+			}
+		}
+		.choose-add-container{
+			margin: 15px 0;
+			img{
+				max-width: 25px;
+				min-height: 25px;
+				cursor: pointer;
+			}
+		}
+		.input-container{
+			position: relative;
+			top:-12px;
+			img{
+				position: absolute;
+				top: 13px;
+				left: 0;
+			}
+			.input-mob{	
+				width: 100%;
+				padding: 6px 30px;
+				display: block;
+				margin: 0 0 10px;
+				font-size: 20px;
+				border-top: 0;
+				border-right: 0;
+				border-left:0;
+				color:#b1b8bd;
+				font-weight: bold;
+				border-bottom: 1px solid @blue;
+				outline:none;
+			}
+
+		}
+}
+.whatsup-green{
+background:@whatsup-green;
+color:@white-color;
+}
+
+.pos-fixed{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left:0;
+	right:0
+	top:0;
+	background: @white-color;
+}
+
+
