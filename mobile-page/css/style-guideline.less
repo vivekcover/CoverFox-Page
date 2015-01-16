@@ -68,9 +68,16 @@ border-radius: @radius;
 .mar-bm{
 	margin:0 0 8px 0;
 }
+.font-atyle{
+	font-size:14px;
+	padding: 0 4px;
+}
 .card{
 	padding:24px 16px;
 	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.12);
+	&.padd-global{
+		padding: 12px 16px;
+	}
 	.padd-global{
 		padding: 12px 16px;
 	}
@@ -89,6 +96,14 @@ border-radius: @radius;
     &.pnone-popup{
 	padding:24px 32px;
 	display: none;
+	}
+	&.bg-orange{
+		background: @orange;
+		padding: 12px 16px;
+	}
+	&.grey-bg{
+		background: @grey-2;
+		padding: 12px 16px;
 	}
 	h1{
 		font-size:24px;
@@ -163,6 +178,12 @@ border-radius: @radius;
 			padding: 3px 1px;
 			font-size: 13px;
 		}
+		&.dis_b{
+			display: block;
+			max-width: 100%;
+			letter-spacing: 2px;
+			font-weight: bold;
+		}
 		&.whatsup-green-btn{
 		background:#538e12;
 		max-width: 100%;
@@ -187,9 +208,10 @@ border-radius: @radius;
 				border:1px solid @grey-3;
 				height: 35px;
 				margin: 5px 0;
+				padding: 0 0 0 20px;
 			}
 			select{
-				width:60%;
+				width:90%;
 				.btn-border-radius;
 				background: @grey-1;
 				border:1px solid @grey-3;
@@ -199,6 +221,9 @@ border-radius: @radius;
 				outline:none;
 				color:@grey-4;
 				font-size:14px;
+			}
+			.width-100{
+				width: 96%;
 			}
 		}
 		.selct_box_txt{
@@ -279,8 +304,19 @@ border-radius: @radius;
 			background: @grey-2;
 			padding: 3px;
 			.btn-border-radius;
-			margin: 30px 0 0 0;
+			margin: 47px 0 0 0;
 		}
+		.highl-grey{
+			background: @grey-1;
+			padding: 4px;
+			font-size: 12px;
+		}
+		.highl-grey-dark{
+			background: @grey-2;
+			padding: 4px;
+			font-size: 12px;
+		}
+
 }
 .whatsup-green{
 background:@whatsup-green;
@@ -321,6 +357,77 @@ color:@white-color;
 		text-align: center;
 		}
 }
+.progres-bar{
+	 background: @blue;
+    height: 8px;
+    margin-bottom: 8px;
+    border:1px solid @white-color;
+    .btn-border-radius;
+    
+}
+.prog-bar {
+	   background: @white-color;
+	    color: #fff;
+	    float: left;
+	    font-size: 12px;
+	    height: 100%;
+	    line-height: 20px;
+	    text-align: center;
+	    transition: width 0.6s ease 0s;
+	    width: 0;
+	}
+.fixed-btn_container{
+	margin: 10px auto;
+	position: fixed;
+	bottom: 0;
+	background: @white-color;
+	left: 50%;
+	transform:translateX(-50%);
+	.left-btn-a{
+		background: @orange;
+		padding: 6px 15px;
+		.btn-border-radius;
+		font-size: 16px;
+		text-transform: uppercase;
+		color:#fff;
+		margin: 0 -7px 0 0;
+		text-decoration: none;
+		img{
+			max-width: 20px;
+		}
+	}
+	.right-btn-a{
+		background: #e75420;
+		padding: 6px 8px;
+		.btn-border-radius;
+		font-size: 16px;
+		text-transform: uppercase;
+		color:#fff;
+		text-decoration: none;
+		img{
+			max-width: 20px;
+		}
+	}
+}
+@media screen and (min-width:320px) and (max-width:480px){
+    .fixed-btn_container{
+    	width: 75%;
+    }
+}
+.btn-buy{
+	background:@blue;
+	padding: 3px;
+	font-size: 13px;
+	color:#fff;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	margin: 5px 0 0 0;
+	border:1px solid @blue;
 
+}
+.mar-top-40{
+margin:40px 0 0 0;
+}
 
 
