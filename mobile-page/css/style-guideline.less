@@ -17,19 +17,21 @@ src:url(../fonts/BGBOLD.otf)
 @orange:#ff6127;
 @orange-dark:#ff1800;
 @blue:#0076ff;
-@muted-blue:#50a8ed;
+@muted-blue:#3993fb;
+@light-blue:#57a2fa;;
 @yellow:#ffd700;
 @muted-yellow:#ffd974;
 @grey-1:#f7fafc;
 @grey-2:#efeff4;
 @grey-3:#eaeef1;
 @grey-4:#8c9aa5;
+@gray-5:#e2e2e2;
 @whatsup-green:#7ed321;
 @pop-green:#62deda;
 @pop-red:#ff7a7a;
 @white-color:#fff;
 @discount-color:#2dc483;
-@baseFont: 'Brandon Grotesque','Helvetica Neue',Helvetica,Tahoma,Arial,sans-serif !important;
+@baseFont: 'Brandon Grotesque','Helvetica Neue',Helvetica,Tahoma,Arial,sans-serif;
 
 body, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
   font-family:@baseFont;
@@ -40,17 +42,8 @@ body, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
 -moz-border-radius: @radius;
 border-radius: @radius;
 }
-
 .pnone{
 	padding:0 !important;
-}
-.discount-bg{
-	background: @discount-color;
-	color:@white-color;
-}
-.pnone-popup{
-	padding:24px 32px  !important;
-	display: none;
 }
 .pnone-right{
 	padding-right:0 !important;
@@ -58,36 +51,45 @@ border-radius: @radius;
 .color-blue{
 	color:@blue;
 }
-.bg-color-blue{
-	background:@blue;
-}
-.bg-red{
-	background: @pop-red !important;
-}
+
 .color-orange{
-	color:@orange !important;
-}
-.bg-clr{
-	background: @grey-1 !important;
-	color:@dark !important;
-	font-weight: bold;
+	color:@orange;
 }
 .bg-add{
 	background: @grey-1;
 }
-.whatsup-green-btn{
-background:#538e12 !important;
-max-width: 100% !important;
-}
 .white-color{
 	color:@white-color;
 }
-.mar-0{
-	margin: 0 !important;
+.gray-light{
+	color:@grey-4;
+	font-size:12px;
+}
+.mar-bm{
+	margin:0 0 8px 0;
 }
 .card{
 	padding:24px 16px;
 	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.12);
+	.padd-global{
+		padding: 12px 16px;
+	}
+	.mar-0{
+		margin: 0;
+	}
+	&.bg-color-blue{
+	padding: 12px 16px;
+	background:@blue;
+    }
+    &.discount-bg{
+	background: @discount-color;
+	color:@white-color;
+	padding: 12px 16px;
+    }
+    &.pnone-popup{
+	padding:24px 32px;
+	display: none;
+	}
 	h1{
 		font-size:24px;
 		margin: 0;
@@ -104,6 +106,11 @@ max-width: 100% !important;
 		a{
 			color:@orange;
 		}
+		em{
+			color:@blue;
+			font-weight: bold;
+		}
+		
 	}
 	p{
 		font-size: 14px;
@@ -111,30 +118,32 @@ max-width: 100% !important;
 	h5{
 		font-size: 16px;
 		font-weight: bold;
-		color:@blue !important;
+		&.color-blue{
+			color:@blue;
+		}
 	}
 	span{
-		color:@grey-3;
+		color:#b9c0c4;
 		position: relative;
 		text-align: center;
 		margin: 0 20px;
-		top:6px;
+		top:0;
 		left: 61px;
 		&:before{
 			left: 23px;
 			position: absolute;
-			top: 0px;
+			top: 7px;
 			width: 70px;
-			border-bottom: 1px solid @grey-3;
+			border-bottom: 1px solid #b9c0c4;
 			content: '';
 			
 		}
 		&:after{
 			left: -78px;
 			position: absolute;
-			top: 0px;
+			top: 7px;
 			width: 70px;
-			border-bottom: 1px solid @grey-3;
+			border-bottom: 1px solid #b9c0c4;
 			content: '';
 			right: 30px;
 		}
@@ -150,11 +159,27 @@ max-width: 100% !important;
 		text-align: center;
 		.btn-border-radius;
 		font-size: 14px;
-
+		&.pad-t-l{
+			padding: 3px 1px;
+			font-size: 13px;
+		}
+		&.whatsup-green-btn{
+		background:#538e12;
+		max-width: 100%;
+		}
+		&.bg-clr{
+			background: @grey-1;
+			color:@dark;
+			font-weight: bold;
+		}
 	}
 	.from-section{
 			font-size:18px;
 			margin: 20px 0;
+			&.mar-0{
+				margin: 0;
+			}
+
 			input{
 				width:98%;
 				.btn-border-radius;
@@ -184,7 +209,7 @@ max-width: 100% !important;
 				margin: 5px 0 15px;
 			}
 		}
-		.btn-container_mobile{
+		.btn-container-mobile{
 			margin: 20px auto;
 			text-align: center;
 			a{
@@ -195,6 +220,9 @@ max-width: 100% !important;
 				color:@white-color;
 				padding: 8px 22px;
 				display: block;
+				&.bg-red{
+					background: @pop-red;
+				}
 			}
 		}
 		.mar-b{
@@ -229,7 +257,6 @@ max-width: 100% !important;
 				width: 100%;
 				padding: 6px 30px;
 				display: block;
-				margin: 0 0 10px;
 				font-size: 20px;
 				border-top: 0;
 				border-right: 0;
@@ -240,6 +267,19 @@ max-width: 100% !important;
 				outline:none;
 			}
 
+		}
+		.border-gray{
+			border-right: 1px solid @gray-5;
+		}
+		.border-blue{
+			border-right: 1px solid @blue;
+		}
+		.addons-match{
+			font-size: 14px;
+			background: @grey-2;
+			padding: 3px;
+			.btn-border-radius;
+			margin: 30px 0 0 0;
 		}
 }
 .whatsup-green{
@@ -256,5 +296,31 @@ color:@white-color;
 	top:0;
 	background: @white-color;
 }
+.top-color-band{
+	padding: 10px 16px;
+	background:@blue;
+	color:@white-color;
+	font-size:13px;
+	.mute-txt{
+		color: @grey-3;
+	}
+	&.opacity-color{
+		background:@muted-blue;
+	}
+	&.light-opacity{
+		background: @light-blue;
+	}
+	
+	a{
+		background: #0054b5;
+		.btn-border-radius;
+		font-size: 16px;
+		color:@white-color;
+		padding: 4px 22px;
+		display: block;
+		text-align: center;
+		}
+}
+
 
 
