@@ -142,6 +142,9 @@ border-radius: @radius;
 			color:@blue;
 		}
 	}
+	h6{
+		font-size: 14px;
+	}
 	span{
 		color:#b9c0c4;
 		position: relative;
@@ -212,8 +215,10 @@ border-radius: @radius;
 				background: @grey-1;
 				border:1px solid @grey-3;
 				height: 35px;
+				font-size: 14px;
 				margin: 5px 0;
 				padding: 0 0 0 20px;
+				font-size: 14px;
 			}
 			select{
 				width:90%;
@@ -348,6 +353,35 @@ border-radius: @radius;
 		.btn-radius-50;
 		margin: 0 auto;
 		
+	}
+}
+input[type="radio"], input[type="checkbox"]{
+	margin: 2px 0 0 0;
+}
+.err_container{
+	margin: 10px 0 0 0;
+	a{
+	background:@blue;
+	padding: 3px 20px;
+	font-size: 13px;
+	color:#fff;
+	text-decoration: none;
+	display: block;
+	margin: 5px 0 0 0;
+	.btn-border-radius;
+	border:1px solid @blue;
+	}
+	input{
+		.btn-border-radius;
+			background: @grey-1;
+			border:1px solid @grey-3;
+			height: 35px;
+			margin: 5px 0;
+			width:80%;
+			font-size: 14px;
+	}
+	p{
+	color: red;
 	}
 }
 }
