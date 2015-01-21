@@ -24,13 +24,23 @@
 @min-box:180px;
 @font-14:14px;
 @blue-color:#6190e2;
-
-body{
-	 color: #314451 !important;
-	 font-weight: 500;
-	 padding: 0;
-	 margin: 0;
-    font-family: "Helvetica Neue",Helvetica,Tahoma,Arial,sans-serif !important;
+@font-face{
+font-family:Brandon Grotesque;
+font-weight:300;
+src:url(../fonts/BGTHIN.otf)
+}
+@font-face{
+font-family:Brandon Grotesque
+;src:url(../fonts/BGREG.otf)
+}
+@font-face{
+font-family:Brandon Grotesque;
+font-weight:700;
+src:url(../fonts/BGBOLD.otf)
+}
+.h1,.h2,.h3,.h4,.h5,.h6,body,h1,h2,h3,h4,h5,h6{
+font-family:"Brandon Grotesque","Helvetica Neue",Helvetica,Tahoma,Arial,sans-serif;
+color:#314451;
 }
 .btn-border-radius (@radius: 3px) {
 -webkit-border-radius: @radius;
