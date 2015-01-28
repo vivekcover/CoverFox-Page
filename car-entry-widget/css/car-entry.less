@@ -1,0 +1,208 @@
+//colors
+@font-face{
+	font-family:Brandon Grotesque;
+	font-weight:300;
+	src:url(../fonts/BGTHIN.otf)
+}
+@font-face{
+font-family:Brandon Grotesque
+;src:url(../fonts/BGREG.otf)
+}
+@font-face{
+font-family:Brandon Grotesque;
+font-weight:700;
+src:url(../fonts/BGBOLD.otf)
+}
+
+body, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  font-family:@baseFont;
+  color:#314451;
+}
+@blue:#0076ff;
+@grey:#f7fafc;
+@dark-grey:#e6e6e6;
+@orange:#FF6127;;
+@white-color:#fff;
+@baseFont: 'Brandon Grotesque','Helvetica Neue',Helvetica,Tahoma,Arial,sans-serif;
+.btn-border-radius (@radius: 3px) {
+-webkit-border-radius: @radius;
+-moz-border-radius: @radius;
+border-radius: @radius;
+}
+.car-box-shadow{
+	box-shadow: 0 0 5px #d8d8e2;
+	-webkit-box-shadow: 0 0 5px #d8d8e2;
+	-moz-box-shadow: 0 0 5px #d8d8e2;
+}
+.test-page{
+	background: #314451;
+	min-height: 290px;
+}
+.over-header{
+	margin: -205px 0 0 0;
+	h2{
+		font-size:40px;
+		display: block;
+		margin: 10px 0 25px 0;
+		color:@white-color;
+	}
+	.section-box-1{
+		border:1px solid @dark-grey;
+		.car-box-shadow;
+		min-height: 455px;
+		.pnone{
+			padding: 0;
+		}
+		.policy-container-car{
+			padding: 60px 40px;
+			background: @white-color;
+			h3{
+				color:@blue;
+				margin: 0;
+			}
+			label{
+				font-size:23px;
+				display:block;
+				font-weight: normal;
+				margin: 30px 0 0 0;
+				input[type='checkbox']{
+					margin:0 20px 0 0;
+				}
+			}
+			.btn-car a{
+				display: inline-block;
+				padding: 10px 30px;
+				color:@white-color;
+				background: @blue;
+				font-size: 18px;
+				.btn-border-radius;
+				margin: 35px 0 0 0;
+				outline:none;
+			}
+		}
+		.policy-left-car{
+			background:@grey;
+			padding: 40px;
+			font-size:16px;
+			line-height: 30px;
+			img{
+				margin: 0 10px 0 0;
+			}
+		}
+		.bg-tab{
+				background:#f1f5f8;
+				padding: 40px;
+				min-height:285px;
+			}
+	}
+	.section-box-2{
+		border:1px solid @dark-grey;
+		margin: 30px 0  0 0;
+		min-height:500px;
+		background: @white-color;
+		.car-box-shadow;
+		.top-container{
+				padding:40px;
+				border-bottom: 1px solid @dark-grey;
+		}
+		.bottom-container{
+			.bg-bottom{
+				background:@grey;
+				clear: both;
+				padding: 40px;
+			}
+			.b-r{
+				padding:30px 40px;
+				border-right:1px solid @dark-grey;
+				min-height: 300px;
+				&.bnone{
+				border-right: none;
+				}
+				.color-orange{
+					color:@orange;
+					a{
+						font-size:16px;
+						font-weight:bold;
+						color:#314451;
+						outline:none;
+					}
+				}
+				p{
+					font-size:14px;
+					a{
+						color:@orange;
+						outline:none;
+					}
+				}
+				.button-call{
+					margin: 20px 0 0 0;
+					 a {
+				    background:@blue;
+				    border-radius: 3px;
+				    color: @white-color;
+				    font-size: 14px;
+				    max-width: 122px;
+				    padding: 2px 24px;
+				    text-align: center;
+				    outline:none;
+				}
+				}
+				span.ortxt{
+					margin: 0 0 0 35px;
+					line-height: 20px;
+				}
+				span.ortxt:before {
+				     border-bottom: 1px solid @dark-grey;
+				    bottom: 106px;
+				    content: "";
+				    left: 93px;
+				    position: absolute;
+				    width: 30px;
+				}
+				span.ortxt:after {
+				    border-bottom: 1px solid @dark-grey;
+				    bottom: 106px;
+				    content: "";
+				    left: 40px;
+				    position: absolute;
+				    right: 30px;
+				    width: 30px;
+				}
+				p{
+					font-size:15px;
+				}
+			}
+			.whatsapp-btn{
+				margin: 20px 0 0 0;
+				a {
+				background: #538e12;
+			    border-radius: 3px;
+			    color: #fff;
+			    display: block;
+			    font-size: 14px;
+			    padding: 6px 18px;
+			    text-align: center;
+			    outline:none;
+				}
+			}
+		}
+		
+		h3{
+			color:@blue;
+			margin: 0;
+
+			&.font{
+				font-size:18px;
+				line-height: 20px;
+			}
+		}
+		h4{
+			margin: 0;
+			line-height: 30px;
+		}
+		p{
+			font-size:18px;
+		}
+	}
+	
+}
