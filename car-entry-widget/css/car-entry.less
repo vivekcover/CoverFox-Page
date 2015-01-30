@@ -26,6 +26,8 @@ body, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
 @white-color:#fff;
 @base-color:#314451;
 @box-color:#d8d8e2;
+@font-16:16px;
+@font-18:18px;
 @baseFont: 'Brandon Grotesque','Helvetica Neue',Helvetica,Tahoma,Arial,sans-serif;
 .btn-border-radius (@radius: 3px) {
 -webkit-border-radius: @radius;
@@ -62,7 +64,7 @@ border-radius: @radius;
 	}
 	.top-txt{
 		color:#97a0a7;
-		font-size: 18px;
+		font-size: @font-18;
 		border-left: 1px solid #97a0a7;
 		margin: 5px 0 0 0;
 	}
@@ -121,7 +123,7 @@ border-radius: @radius;
 				padding: 10px 30px;
 				color:@white-color;
 				background: @blue;
-				font-size: 18px;
+				font-size: @font-18;
 				.btn-border-radius;
 				margin: 35px 0 0 0;
 				outline:none;
@@ -130,7 +132,7 @@ border-radius: @radius;
 		.policy-left-car{
 			background:@grey;
 			padding: 40px;
-			font-size:16px;
+			font-size:@font-16;
 			line-height: 30px;
 			ul{
 				margin: 0;
@@ -175,7 +177,7 @@ border-radius: @radius;
 				.color-orange{
 					color:@orange;
 					a{
-						font-size:16px;
+						font-size:@font-16;
 						font-weight:bold;
 						color:@base-color;
 						outline:none;
@@ -223,7 +225,7 @@ border-radius: @radius;
 				    width: 30px;
 				}
 				p{
-					font-size:16px;
+					font-size:@font-16;
 				}
 			}
 			.whatsapp-btn{
@@ -246,7 +248,7 @@ border-radius: @radius;
 			margin: 0;
 
 			&.toll-font{
-				font-size:18px;
+				font-size:@font-18;
 				line-height: 20px;
 			}
 		}
@@ -255,7 +257,7 @@ border-radius: @radius;
 			line-height: 30px;
 		}
 		p{
-			font-size:18px;
+			font-size:@font-18;
 		}
 	}
 	
@@ -313,7 +315,7 @@ border-radius: @radius;
 	    left: -26px;
 	    width: 20px;
 	    height: 20px;
-	    font-size: 16px;
+	    font-size: @font-16;
 	    line-height: 1.2;
 	    text-align: center;
 	    color: @white-color;
@@ -363,7 +365,7 @@ border-radius: @radius;
 		border-left: none;
 		border-bottom: 1px solid #333;
 		padding: 5px;
-		font-size: 16px;
+		font-size: @font-16;
 		color:#97a0a7;
 		font-weight: bold;
 		outline:none;
@@ -412,7 +414,7 @@ margin: -125px 0 0 0;
 			color:@orange;
 		}
 		h3{
-			font-size: 16px;
+			font-size: @font-16;
 			margin: 0;
 		}
 		a{
@@ -427,63 +429,63 @@ margin: -125px 0 0 0;
 		border-bottom: 1px solid @dark-grey;
 		h3{
 			margin: 0;
-			font-size:18px;
+			font-size:@font-18;
 			color:@orange;
 		}
 		p{
-			font-size:16px;
+			font-size:@font-16;
 			font-weight: bold;
 			color:#8d979e;
 			line-height: 18px;
 		}
-	ul.circles-list {
-    left: -13pxpx;
-    list-style:none;
-    position: relative;
-    top: 15px;
-
-    
-	}
-	ul.circles-list > li{
-	   	font-size: 14px;
-	    left: 40px;
-	    margin: 0;
-	    color:#8d979e;
-	    padding: 4px 0;
+		ul.circles-list {
+	    left: -13pxpx;
+	    list-style:none;
 	    position: relative;
+	    top: 15px;
+
+	    
 		}
-	.circles-list li:before {
-	    position: absolute;
-	    top: 10px;
-	    left: -26px;
-	    width: 10px;
-	    height: 10px;
-	    font-size: 16px;
-	    line-height: 1.2;
-	    text-align: center;
-	    color: #e5e8e9;
-	    border: 1px solid #e5e8e9;
-	    border-radius: 50%;
-	    background: #e5e8e9;
-	    content: "";
-	}
-	.circles-list li:after {
-	     background: #e5e8e9;
-	    color: #e5e8e9;
-	    content: "I";
-	    font-size: 4px;
-	     height: 19px;
-	    left: -21px;
-	    position: absolute;
-	    top: -9px;
+		ul.circles-list > li{
+		   	font-size: 14px;
+		    left: 40px;
+		    margin: 0;
+		    color:#8d979e;
+		    padding: 4px 0;
+		    position: relative;
+			}
+		.circles-list li:before {
+		    position: absolute;
+		    top: 10px;
+		    left: -26px;
+		    width: 10px;
+		    height: 10px;
+		    font-size: @font-16;
+		    line-height: 1.2;
+		    text-align: center;
+		    color: #e5e8e9;
+		    border: 1px solid #e5e8e9;
+		    border-radius: 50%;
+		    background: #e5e8e9;
+		    content: "";
 		}
-	}
-	a{
+		.circles-list li:after {
+		     background: #e5e8e9;
+		    color: #e5e8e9;
+		    content: "I";
+		    font-size: 4px;
+		     height: 19px;
+		    left: -21px;
+		    position: absolute;
+		    top: -9px;
+			}
+		}
+		a{
 			font-size: 15px;
 			color:@blue;
 			outline:none;
 		}
-}
+	}
 .box-3 {
 	.car-box-shadow;
 	padding: 40px 14px 18px 40px;
@@ -493,7 +495,7 @@ margin: -125px 0 0 0;
 	}
 	label{
 		color:@grey-color;
-		font-size: 18px;
+		font-size: @font-18;
 		font-weight: normal;
 		line-height: 30px;
 		display: block;
@@ -513,7 +515,7 @@ margin: -125px 0 0 0;
 			}
 			p{
 				color:#99c8ff;
-				font-size: 16px;
+				font-size: @font-16;
 				font-weight: 600;
 				margin: 0;
 			}
@@ -547,7 +549,7 @@ margin: -125px 0 0 0;
 			display: inline;
 		}
 		a{
-			font-size:18px;
+			font-size:@font-18;
 			color:@blue;
 			text-decoration: underline;
 			outline: none;
