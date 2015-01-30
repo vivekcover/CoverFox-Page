@@ -25,6 +25,7 @@ body, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
 @orange:#FF6127;
 @white-color:#fff;
 @base-color:#314451;
+@box-color:#d8d8e2;
 @baseFont: 'Brandon Grotesque','Helvetica Neue',Helvetica,Tahoma,Arial,sans-serif;
 .btn-border-radius (@radius: 3px) {
 -webkit-border-radius: @radius;
@@ -32,14 +33,14 @@ body, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
 border-radius: @radius;
 }
 .car-box-shadow{
-	box-shadow: 0 0 5px #d8d8e2;
-	-webkit-box-shadow: 0 0 5px #d8d8e2;
-	-moz-box-shadow: 0 0 5px #d8d8e2;
+	box-shadow: 0 0 5px @box-color;
+	-webkit-box-shadow: 0 0 5px @box-color;
+	-moz-box-shadow: 0 0 5px @box-color;
 }
 .btn-box-shadow{
-	box-shadow:0 2px 3px #a8a8a8;
-	-moz-box-shadow:0 2px 3px #a8a8a8;
-	-webkit-box-shadow:0 2px 3px #a8a8a8;
+	box-shadow:0 2px 3px @box-color;
+	-moz-box-shadow:0 2px 3px @box-color;
+	-webkit-box-shadow:0 2px 3px @box-color;
 }
 .pnone{
 		padding: 0;
@@ -67,31 +68,22 @@ border-radius: @radius;
 	}
 	.top-menu{
 		margin: 9px 0 0 0;
-		ul{
-			margin: 0;
-			padding: 0;
-			li{
-				list-style: none;
-				display: inline-block;
-
-				a{
-					font-size: 14px;
-					padding: 3px 14px;
-					color:@white-color;
-					outline: none;
-					.btn-border-radius;
-					text-transform: uppercase;
-					&:hover{
-						background: @orange;
-						color:@white-color;
-						text-decoration: none;
-					}
-					&.active{
-						background: @orange;
-						color:@white-color;
-						text-decoration: none;
-					}
-				}
+		nav a{
+			font-size: 14px;
+			padding: 3px 14px;
+			color:@white-color;
+			outline: none;
+			.btn-border-radius;
+			text-transform: uppercase;
+			&:hover{
+				background: @orange;
+				color:@white-color;
+				text-decoration: none;
+			}
+			&.active{
+				background: @orange;
+				color:@white-color;
+				text-decoration: none;
 			}
 		}
 	}
@@ -106,7 +98,7 @@ border-radius: @radius;
 	}
 	.section-box-1{
 		border:1px solid @dark-grey;
-		.car-box-shadow;
+		.btn-box-shadow;
 		min-height: 455px;
 		.policy-container-car{
 			padding: 60px 40px;
@@ -140,14 +132,21 @@ border-radius: @radius;
 			padding: 40px;
 			font-size:16px;
 			line-height: 30px;
-			img{
-				margin: 0 10px 0 0;
+			ul{
+				margin: 0;
+				padding: 0;
+				li{
+					list-style: none;
+					img{
+						margin: 0 10px 0 0;
+					}
+				}
 			}
 		}
 		.bg-tab{
 				background:#f1f5f8;
 				padding: 40px;
-				min-height:285px;
+				min-height:283px;
 			}
 	}
 	.section-box-2{
@@ -208,7 +207,7 @@ border-radius: @radius;
 				}
 				span.ortxt:before {
 				     border-bottom: 1px solid @dark-grey;
-				    bottom: 106px;
+				    bottom: 101px;
 				    content: "";
 				    left: 93px;
 				    position: absolute;
@@ -216,7 +215,7 @@ border-radius: @radius;
 				}
 				span.ortxt:after {
 				    border-bottom: 1px solid @dark-grey;
-				    bottom: 106px;
+				    bottom: 101px;
 				    content: "";
 				    left: 40px;
 				    position: absolute;
@@ -246,7 +245,7 @@ border-radius: @radius;
 			color:@blue;
 			margin: 0;
 
-			&.font{
+			&.toll-font{
 				font-size:18px;
 				line-height: 20px;
 			}
@@ -278,12 +277,12 @@ border-radius: @radius;
 		margin: 20px 0;
 		letter-spacing: 1px;
 	}
-	.how-txt{
+	.listing-line{
 		font-size: 30px;
 		margin: 50px 0 0 0;
 		color:@white-color;
 		position: relative;
-		&.how-txt:after {
+		&.listing-line:after {
 	     background: @white-color;
 	    color: @white-color;
 	    content: "I";
@@ -301,7 +300,7 @@ border-radius: @radius;
     top: 59px;
     
 	}
-	ul.circles-list > li{
+	ul.circles-list li{
 	    font-size: 20px;
 	    left: 40px;
 	    margin: 14px 0;
@@ -335,7 +334,7 @@ border-radius: @radius;
 		}
 }
 .bike-r{
-	.car-box-shadow;
+	.btn-box-shadow;
 	background: @white-color;
 	.btn-border-radius;
 	margin: 0 0 15px 0;
