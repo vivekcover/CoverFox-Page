@@ -108,15 +108,20 @@ border-radius: @radius;
 				color:@blue;
 				margin: 0;
 			}
-			label{
-				font-size:23px;
-				display:block;
-				font-weight: normal;
-				margin: 30px 0 0 0;
-				input[type='checkbox']{
-					margin:0 20px 0 0;
+			ul{
+				margin: 0;
+				padding: 0;
+				
+				li{
+					display: block;
+					list-style: none;
 				}
 			}
+			span.txt-chbox{
+				font-size: 22px;
+				margin: 0 0 0 15px;
+			}
+			
 			.btn-car a{
 				display: inline-block;
 				padding: 10px 30px;
@@ -489,16 +494,15 @@ a{
 		h3{
 			margin: 0 0 20px;
 		}
-		label{
-			color:@grey-color;
-			font-size: @font-18;
-			font-weight: normal;
-			line-height: 30px;
-			display: block;
-			input{
-				margin: 0 10px 0 0;
+		ul{
+				margin: 0;
+				padding: 0;
+				
+				li{
+					display: block;
+					list-style: none;
+				}
 			}
-		}
 		}
 		.middle-box{
 			.blue-box{
@@ -582,6 +586,53 @@ a{
 				}
 			}
 		}
+
+
+label {
+display: inline;
+margin: 25px 0 0 0;
+}
+
+.regular-checkbox {
+	display: none;
+}
+.regular-checkbox + label {
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 7px;
+	.btn-border-radius;
+	display: inline-block;
+	position: relative;
+}
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked + label {
+	background: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.regular-checkbox:checked + label:after {
+	content: '\2714';
+	 background: @blue;
+	 border:1px solid @blue;
+    color: #fff;
+    font-size: 8px;
+    .btn-border-radius;
+    left: -1px;
+    padding: 1px 4px;
+    position: absolute;
+    top: -1px;
+}
+span.txt-chbox{
+	font-size: 18px;
+	margin: 0 0 0 15px;
+}
+
 
 
 /* Motor Css End */
