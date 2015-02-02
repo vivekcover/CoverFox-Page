@@ -13,15 +13,22 @@ font-family:Brandon Grotesque;
 font-weight:700;
 src:url(../fonts/BGBOLD.otf)
 }
+body{
+	background: #efeff4;
+	font-family:@baseFont;
+	color:@base-color;
+}
 
-body, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
   font-family:@baseFont;
   color:@base-color;
+
 }
 @blue:#0076ff;
 @grey:#f7fafc;
 @dark-grey:#e6e6e6;
 @grey-color:#727f87;
+@grey-txt:#e5e8e9;
 @orange:#FF6127;
 @white-color:#fff;
 @base-color:#314451;
@@ -406,12 +413,22 @@ a{
 		background: @grey;
 		padding: 21px 14px 18px 40px;
 		border-bottom: 1px solid @dark-grey;
-		p{
-			font-size: 14px;
-			color:@orange;
+		&.motor-description{
+			background: #3f4f5b;
+			color:@white-color;
+			p{
+			font-size:15px;
+			margin: 12px 0;
+			color:@white-color;
 		}
-		h3{
-			font-size: @font-16;
+		}
+		h4{
+			font-size: 18px;
+			color:@orange;
+			margin: 0 0 2px 0;
+		}
+		p{
+			font-size:15px;
 			margin: 0;
 		}
 		a{
@@ -421,9 +438,29 @@ a{
 		}
 	}
 	.box-2{
+		background: @white-color;
 		.car-box-shadow;
 		padding: 21px 14px 18px 40px;
 		border-bottom: 1px solid @dark-grey;
+		min-height: 280px;
+		.lt-logo{
+			border:2px solid @dark-grey;
+			margin: 10px 0 15px 0;
+			padding: 10px;
+		}
+		.rs-txt{
+			font-size: 18px;
+			color:@blue;
+			line-height: 30px;
+		}
+		.breakup-btn{
+			margin: 20px 0;
+			a{
+				border:1px solid @blue;
+				padding: 5px 10px;
+				.btn-border-radius;
+			}
+		}
 		h3{
 			margin: 0;
 			font-size:@font-18;
@@ -455,14 +492,14 @@ a{
 		    left: -26px;
 		    width: 10px;
 		    height: 10px;
-		    border: 1px solid #e5e8e9;
+		    border: 1px solid @grey-txt;
 		    border-radius: 50%;
-		    background: #e5e8e9;
+		    background: @grey-txt;
 		    content: "";
 		}
 		.circles-list li:after {
-		     background: #e5e8e9;
-		    color: #e5e8e9;
+		     background: @grey-txt;
+		    color: @grey-txt;
 		    content: "I";
 		    font-size: 4px;
 		     height: 19px;
@@ -481,6 +518,73 @@ a{
 		.car-box-shadow;
 		padding: 40px 14px 18px 40px;
 		border-bottom: 1px solid @dark-grey;
+		&.quotes-container{
+			background: @grey;
+			min-height: 620px;
+			h3{
+				color:#c4cbd1;
+			}
+			h4{
+				color: @orange;
+				margin: 0;
+				line-height:30px;
+			}
+			p{
+				font-size:20px;
+			}
+			.summary-btn{
+			margin: 40px 0;
+			a{
+				border:1px solid @blue;
+				padding: 5px 10px;
+				.btn-border-radius;
+			}
+		}
+			ul.circles-list {
+		    left: 17px;
+		    list-style:none;
+		    position: relative;
+		    top: 15px;
+			}
+			ul.circles-list li{
+			   	font-size: 14px;
+			    left: 40px;
+			    margin: 0;
+			    color:#8d979e;
+			    padding: 4px 0;
+			    position: relative;
+				}
+			.circles-list li:before {
+			    position: absolute;
+			    top: 10px;
+			    left: -26px;
+			    width: 10px;
+			    height: 10px;
+			    border: 1px solid @grey-txt;
+			    border-radius: 50%;
+			    background: @grey-txt;
+			    content: "";
+			}
+			.circles-list li:after {
+			     background: @grey-txt;
+			    color: @grey-txt;
+			    content: "I";
+			    font-size: 4px;
+			     height: 19px;
+			    left: -21px;
+			    position: absolute;
+			    top: -9px;
+				}
+				.addons{
+					margin: 20px 0;
+					p{
+						font-size: 14px;
+						margin: 15px 0 0 33px;
+						color:#8d979e;
+					}
+				}
+
+			}
 		h3{
 			margin: 0 0 20px;
 		}
@@ -499,6 +603,46 @@ a{
 			}
 		}
 		.middle-box{
+			&.top-margin{
+				margin: 30px 0 0 0;
+				a{
+					font-size: 16px;
+					img{
+						max-width: 10px;
+						margin: 0 10px 0 0;
+					}
+				}
+			}
+				.list-box{
+					background: @white-color;
+					ul{
+						margin: 200px 0 0 0;
+						padding: 0;
+						li{
+							background: @grey;
+							display: blcok;
+							padding: 20px;
+							list-style: none;
+							border-bottom: 1px solid @dark-grey;
+							color: #98d0fd;
+							font-size: 20px;
+						}
+					}
+					display: block;
+					.btn-box-shadow;
+					&.mtop{
+						margin: 22px 0 0 0;
+					}
+					a{
+						background: @blue;
+						font-size: 15px;
+						color:@white-color;
+						padding: 4px 20px;
+						.btn-border-radius;
+						outline: none;
+						margin: 30px 0 0 0;
+					}
+				}
 			.blue-box{
 				background: @blue;
 				padding: 22px;
@@ -517,8 +661,58 @@ a{
 					border-right: 1px solid #0257ba;
 				}
 			}
+			.blue-box-1{
+				background: @blue;
+				padding: 10px;
+				margin: 11px 0 0 0;
+				display: block;
+				min-height: 60px;
+				ol{
+					margin: 0;
+					padding: 0;
+					counter-reset:li;
+					li{
+						display: inline-block;
+						list-style: none;
+						position: relative;
+						padding: 9px 50px;
+						font-size: 16px;
+						color:@white-color;
+						left:35px;	
+									
+						&:before{
+							content:counter(li);
+							counter-increment:li;
+							border: 1px solid @white-color;
+							width: 40px;
+							height: 40px;
+							border-radius: 50%;
+							position: absolute;
+							top: 0;
+							left:0;
+							text-align: center;
+							padding: 7px 0 0 0;
+						}
+						&:after{
+							content: "";
+							border-top: 1px solid @white-color;
+							width: 45px;
+							position: absolute;
+							top: 22px;
+							left:-45px;
+							
+						}
+						&:first-child{
+							&:after{
+								border-top: none;
+							}
+						}
+					}
+				}
+			}
 		}
 		.btn-box{
+			background: @white-color;
 			padding: 20px;
 			display: block;
 			.btn-box-shadow;
@@ -552,6 +746,25 @@ a{
 		.box-right{
 			background: @white-color;
 			padding: 25px 0 0 0;
+			&.motor-nw{
+				padding: 0;
+				background: @white-color;
+				.icon-circle{
+				background: @dark-grey;
+				max-width: 60px;
+				min-height: 60px;
+				border-radius: 50%;
+				margin: 0 auto;
+				position: relative;
+				top:27px;
+				}
+				h2{
+				margin: 10px 0;
+				font-size: 18px;
+				}
+
+			}
+			
 			h3{
 				text-transform: uppercase;
 				font-size: 20px;
@@ -564,6 +777,7 @@ a{
 				.btn-box-shadow;
 				h4{
 					margin: 0 0 20px;
+					font-size: 15px;
 
 				}
 				background: @grey;
@@ -614,6 +828,9 @@ a{
 	span.txt-chbox{
 		font-size: 18px;
 		margin: 0 0 0 15px;
+	}
+	.p-top{
+		padding: 64px 0 0 0;
 	}
 
 
