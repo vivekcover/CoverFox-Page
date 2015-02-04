@@ -1,25 +1,24 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title> new document </title>
+<title> Motor Proposal </title>
 <meta name="generator" content="editplus" />
 <meta name="author" content="" />
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link rel="stylesheet" href="css/bootstrap.css" />
 <link rel="stylesheet" href="css/car-entry.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script type="text/javascript">
   $(function(){
         var stickyHeaderTop = $('#menu-fixed').offset().top;
- 
         $(window).scroll(function(){
-                if( $(window).scrollTop() > stickyHeaderTop ) {
-                     $('#menu-fixed').css({position: 'fixed', top: '0'});
-                     $('#menu-fixed').css('display', 'block');
-                } else {
-                     $('#menu-fixed').css({position: 'static', top: '0'});
-                }
+			if( $(window).scrollTop() > stickyHeaderTop ) {
+				 $('#menu-fixed').css({position: 'fixed', top: '-10px'});
+			} 
+			else {
+				 $('#menu-fixed').css({position: 'static', top: '0'});
+			}
         });
   });
   </script>
@@ -125,8 +124,8 @@
 				</div>
 			</div>
 			<div class="col-md-7 middle-box top-margin">
+			<a href="#"><img src="img/blue-arrow.png" />Back to result</a>
 				<div id="menu-fixed">
-					<a href="#"><img src="img/blue-arrow.png" />Back to result</a>
 					<div class="blue-box-1">
 						<ol>
 							<li>Proposer Details</li>
