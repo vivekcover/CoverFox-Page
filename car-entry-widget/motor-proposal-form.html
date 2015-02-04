@@ -11,16 +11,23 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script type="text/javascript">
   $(function(){
-        var stickyHeaderTop = $('#menu-fixed').offset().top;
+        var Menufixed = $('#menu-fixed').offset().top;
         $(window).scroll(function(){
-			if( $(window).scrollTop() > stickyHeaderTop ) {
+			if( $(window).scrollTop() > Menufixed ) {
 				 $('#menu-fixed').css({position: 'fixed', top: '-11px'});
 			} 
 			else {
 				 $('#menu-fixed').css({position: 'static', top: '0'});
 			}
         });
-  });
+		});
+		$(document).ready(function($) {
+			$('#motor-accordion').find('.motor-toggle').click(function(){
+				$(this).next().slideToggle('fast');
+				$(".motor-content").not($(this).next()).slideUp('fast');
+	
+			});
+		});
   </script>
 </head>
 <body>
@@ -135,14 +142,23 @@
 						</ol>
 					</div>
 				</div>
-				<div class="list-box text-center">
+				<div  class="list-box text-center">
 					<div class="p-top">
 						<a href="#">Continue to vehicle details</a>
 					</div>
-					<ul>
-						<li>Vehicle Details</li>
-						<li>Contact Address</li>
-						<li>Buy</li>
+					<ul id="motor-accordion">
+						<li class="motor-toggle">Vehicle Details</li>
+						<div class="motor-content open-content">
+							Test 1
+						</div>
+						<li class="motor-toggle">Contact Address</li>
+						<div class="motor-content">
+							Test 2
+						</div>
+						<li class="motor-toggle">Buy</li>
+						<div class="motor-content">
+							Test 3
+						</div>
 					</ul>
 				</div>
 				

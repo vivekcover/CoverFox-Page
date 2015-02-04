@@ -392,13 +392,6 @@ border-radius: @radius;
 		}
 	}
 }
-a{
-	font-size: 20px;
-	color: @blue;
-	line-height: 35px;
-	text-decoration: underline;
-}
-
 }
 /* Car Css End */
 
@@ -624,6 +617,18 @@ a{
     				z-index: -1;
     				display: block;
 					.btn-box-shadow;
+					.motor-toggle{
+						cursor: pointer;
+						 margin: 0;
+					}
+					.motor-content{
+						padding: 20px;
+						font-size:16px;
+						display: none;
+						/*&.open-content{
+							display: block;
+						} */
+					}
 					ul{
 						margin: 200px 0 0 0;
 						padding: 0;
@@ -841,6 +846,131 @@ a{
 	.p-top{
 		padding-top: 64px;
 	}
+
+
+
+/* Motor Css End */
+
+/* Motor Css ST */
+
+.carform-container{
+	width:850px;
+	.btn-box-shadow;
+	background: @white-color;
+	.btn-border-radius;
+	margin: 50px auto;
+	padding: 20px 48px 40px 40px;
+	span.search{
+		position: absolute;
+		top:10px;
+		img{
+			max-width: 15px;
+		}
+		
+	}
+	h3{
+		color:@orange;
+		margin: 0;
+		img{
+			margin: 5px 10px 0 0;
+			vertical-align: top;
+		}
+	}
+	label{
+		display: block;
+		color:@blue;
+		font-size: 22px;
+		line-height: 30px;
+		margin: 12px 0;
+		font-weight: normal;
+	}
+	input{
+		display: block;
+		width:100%;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		border-bottom: 1px solid #333;
+		padding: 5px 25px;
+		font-size: @font-16;
+		color:#97a0a7;
+		font-weight: bold;
+		outline:none;
+	}
+	select{
+		display: block;
+		width:100%;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		border-bottom: 1px solid #333;
+		padding: 5px;
+		font-size: @font-16;
+		color:#97a0a7;
+		font-weight: bold;
+		outline:none;
+	}
+	.get-btn{
+		margin: 35px 0 0 0;
+		a{
+			background: @blue;
+			padding: 10px 22px;
+			color: @white-color;
+			font-size: 20px;
+			.btn-border-radius;
+			text-decoration: none;
+			outline:none;
+		}
+	}
+	.radio-btn{
+		
+
+	.motor-checkbox {
+		position:absolute; 
+		z-index:-1000; 
+		left:-1000px;
+		overflow: hidden; 
+		clip: rect(0 0 0 0);
+		height:1px;
+		width:1px;
+		margin:-1px;
+		padding:0;
+		border:0;
+		}
+
+		.motor-checkbox + label.css-label {
+		padding: 0 45px;
+		height:32px; 
+		display:inline-block;
+		line-height:32px;
+		background-repeat:no-repeat;
+		background-position: 0 0;
+		font-size:20px;
+		color:@base-color;
+		vertical-align:middle;
+		cursor:pointer;
+
+		}
+		.motor-checkbox:checked + label.css-label {
+		background-position: 0 -32px;
+		}
+		label.css-label {
+		background:url(../img/radio-select.png);
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		}
+		}
+	}
+a{
+	font-size: 20px;
+	color: @blue;
+	line-height: 35px;
+	text-decoration: underline;
+}
 
 
 
