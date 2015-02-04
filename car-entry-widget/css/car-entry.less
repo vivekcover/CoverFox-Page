@@ -611,11 +611,18 @@ a{
 					img{
 						max-width: 10px;
 						margin: 0 10px 0 0;
+						}
+					}
+					.menu-fixed{
+						position: fixed;
+						top: 107px;
+    					z-index: 1;
 					}
 				}
-			}
 				.list-box{
 					background: @white-color;
+					position: relative;
+    				top: 95px;
 					ul{
 						margin: 200px 0 0 0;
 						padding: 0;
@@ -664,7 +671,7 @@ a{
 			}
 			.blue-box-1{
 				background: @blue;
-				padding: 10px;
+				padding: 10px 19px;
 				margin: 11px 0 0 0;
 				display: block;
 				min-height: 60px;
@@ -679,7 +686,7 @@ a{
 						padding: 9px 50px;
 						font-size: 16px;
 						color:@white-color;
-						left:35px;	
+						left:27px;	
 									
 						&:before{
 							content:counter(li);
