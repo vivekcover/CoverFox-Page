@@ -51,8 +51,17 @@ border-radius: @radius;
 	-moz-box-shadow:0 2px 3px @box-color;
 	-webkit-box-shadow:0 2px 3px @box-color;
 }
+.txtbox-box-shadow{
+	box-shadow: 0 2px 4px -3px #c0aab1 inset;
+	-moz-box-shadow: 0 2px 4px -3px #c0aab1 inset;
+	-webkit-box-shadow: 0 2px 4px -3px #c0aab1 inset;
+}
+
 .pnone{
 		padding: 0;
+	}
+	.plnone{
+		padding-left: 0;
 	}
 .top-v1{
 	&.mheight{
@@ -622,6 +631,9 @@ border-radius: @radius;
 						}
 					}
 				}
+				#menu-fixed{
+					z-index: 1;
+				}
 				.list-box{
 					background: @white-color;
     				z-index: -1;
@@ -640,7 +652,7 @@ border-radius: @radius;
 						} */
 					}
 					ul{
-						margin: 200px 0 0 0;
+						margin:0;
 						padding: 0;
 						li{
 							background: @grey;
@@ -853,11 +865,61 @@ border-radius: @radius;
 		font-size: 18px;
 		margin: 0 0 0 15px;
 	}
-	.p-top{
-		padding-top: 64px;
+	.form-detaials{
+		h3{
+			margin: 0;
+		}
+		padding:30px;
+		.border-right{
+			border-right: 1px solid @dark-grey;
+		}
+		.padd-left{
+			padding-left: 45px;
+		}
+		&.form-detaials{
+			.dob-container{
+				display: inline-block;
+			}
+			label{
+				display: block;
+				font-size: 16px;
+				line-height: 25px;
+				font-weight: normal;
+			}
+			input{
+				font-size: 14px;
+				.btn-border-radius;
+				.txtbox-box-shadow;
+				border: 1px solid @dark-grey;
+				padding: 4px;
+				height: 40px;
+				width: 220px;
+				margin: 0 0 10px;
+			}
+			.date-width{
+					width: 70px;
+				}
+			select{
+				font-size: 14px;
+				.btn-border-radius;
+				.txtbox-box-shadow;
+				border: 1px solid @dark-grey;
+				padding: 4px;
+				height: 40px;
+				width: 220px;
+				margin: 0 0 10px;
+
+			}
+			
+		}
+		.btn-next{
+			margin: 20px 0;
+		}
 	}
 
-
+.p-top{
+	padding-top: 65px;
+}
 
 /* Motor Css End */
 
