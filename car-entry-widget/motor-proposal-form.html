@@ -28,6 +28,23 @@
 	
 			});
 		});
+		
+		$(document).on('click', '#confirm_proposal_details' ,function(event){
+			event.preventDefault();
+			$('#vehicle-details-toggle').next().slideToggle('fast');
+			$(".motor-content").not($("#vehicle-details-toggle").next()).slideUp('fast');
+			$("#proposer-breadcrumb").removeClass("active").addClass('done');
+			$("#vehicle-breadcrumb").removeClass("done").addClass('active');
+		});
+		$(document).on('click', '#confirm_proposal_one' ,function(event){
+			event.preventDefault();
+			$('#vehicle-details-two').next().slideToggle('fast');
+			$(".motor-content").not($("#vehicle-details-two").next()).slideUp('fast');
+			$("#vehicle-breadcrumb").removeClass("active").addClass('done');
+			$("#address-breadcrumb").removeClass("done").addClass('active');
+		});
+
+		
   </script>
 </head>
 <body>
@@ -125,82 +142,83 @@
 				<div id="menu-fixed">
 					<div class="blue-box-1">
 						<ol>
-							<li>Proposer Details</li>
-							<li>Vehicle Details</li>
-							<li>Contact Address</li>
+							<li id="proposer-breadcrumb" class="active">Proposer Details</li>
+							<li id="vehicle-breadcrumb">Vehicle Details</li>
+							<li id="address-breadcrumb">Contact Address</li>
 							<li>Buy</li>
 						</ol>
 					</div>
 				</div>
 				<div  class="list-box">
-					<div class="form-detaials">
-						<div class="col-md-6 border-right">
-							<label for="">First Name</label>
-							<input type="text" id="" />
-							<label for="">Last Name</label>
-							<input type="text" id="" />
-							<label for="">Email Id</label>
-							<input type="text" id="" />
-							<label for="">Your phone number</label>
-							<input type="text" id="" />
-							<label for="">Gender</label>
-							<select id="">
-								<option value="Male" selected="selected">Male</option>
-								<option value="Female">Female</option>
-							</select>
-							<label for="">DOB</label>
-							<div class="dob-container">
-								<div class="col-md-4 plnone prnone"><input type="text" id="" class="date-width" placeholder="DD" /></div>
-								<div class="col-md-4"><input type="text" id="" class="date-width" placeholder="MM" /></div>
-								<div class="col-md-4"><input type="text" id="" class="date-width" placeholder="YYYY" /></div>
-							</div>
-							<label for="">Marital Status</label>
-							<select id="">
-								<option value="Unmarried" selected="selected">Unmarried</option>
-								<option value="Married">Married</option>
-							</select>
-						</div>
-						<div class="col-md-6 padd-left">
-							<label for="">PAN No</label>
-							<input type="text" id="" placeholder="PAN Number"/>
-							<label for="">Father's first name</label>
-							<input type="text" id="" placeholder="First name"/>
-							<label for="">Father's last name</label>
-							<input type="text" id="" placeholder="Last name"/>
-							<label for="">Nominee Full Name</label>
-							<input type="text" id="" placeholder="Name"/>
-							<label for="">Nominee Age</label>
-							<input type="text" id="" placeholder="Age"/>
-							<label for="">Nominee Relationship</label>
-							<select name="" id="">
-								<option value="Son">Son</option>
-								<option value="Daughter">Daughter</option>
-								<option value="Mother">Mother</option>
-								<option value="Father">Father</option>
-								<option value="Guardian">Guardian</option>
-								<option value="Spouse">Spouse</option>
-								<option value="Sibling">Sibling</option>
-								<option value="Other">Other</option>
-							</select>
-							<label for="">Occupation</label>
-							<select id="" name="">
-								<option value="0004">Private (Sales and marketing)</option>
-								<option value="0005">Private (other than Sales / marketing)</option>
-								<option value="0006">Self employed / self business</option>
-								<option value="0007">Others</option>
-								<option value="0001">Media / Sports / Armed forces</option>
-								<option value="0002">Government employees</option>
-								<option value="0003">Professionals (CA, Doctor, lawyer)</option>
-							  </select>
-						</div>
-						<div class="clearfix"></div>
-						<div class="btn-next text-center">
-							<a href="#">Continue to vehicle details</a>
-						</div>
-					</div>
 					<ul id="motor-accordion">
-						<li class="motor-toggle">Vehicle Details</li>
-						<div class="motor-content open-content">
+						<li class="motor-toggle">Proposer Details</li>
+						<div class="motor-content form-detaials open-content">
+							<div class="col-md-6 border-right">
+								<label for="">First Name</label>
+								<input type="text" id="" />
+								<label for="">Last Name</label>
+								<input type="text" id="" />
+								<label for="">Email Id</label>
+								<input type="text" id="" />
+								<label for="">Your phone number</label>
+								<input type="text" id="" />
+								<label for="">Gender</label>
+								<select id="">
+									<option value="Male" selected="selected">Male</option>
+									<option value="Female">Female</option>
+								</select>
+								<label for="">DOB</label>
+								<div class="dob-container">
+									<div class="col-md-4 plnone prnone"><input type="text" id="" class="date-width" placeholder="DD" /></div>
+									<div class="col-md-4"><input type="text" id="" class="date-width" placeholder="MM" /></div>
+									<div class="col-md-4"><input type="text" id="" class="date-width" placeholder="YYYY" /></div>
+								</div>
+								<label for="">Marital Status</label>
+								<select id="">
+									<option value="Unmarried" selected="selected">Unmarried</option>
+									<option value="Married">Married</option>
+								</select>
+							</div>
+							<div class="col-md-6 padd-left">
+								<label for="">PAN No</label>
+								<input type="text" id="" placeholder="PAN Number"/>
+								<label for="">Father's first name</label>
+								<input type="text" id="" placeholder="First name"/>
+								<label for="">Father's last name</label>
+								<input type="text" id="" placeholder="Last name"/>
+								<label for="">Nominee Full Name</label>
+								<input type="text" id="" placeholder="Name"/>
+								<label for="">Nominee Age</label>
+								<input type="text" id="" placeholder="Age"/>
+								<label for="">Nominee Relationship</label>
+								<select name="" id="">
+									<option value="Son">Son</option>
+									<option value="Daughter">Daughter</option>
+									<option value="Mother">Mother</option>
+									<option value="Father">Father</option>
+									<option value="Guardian">Guardian</option>
+									<option value="Spouse">Spouse</option>
+									<option value="Sibling">Sibling</option>
+									<option value="Other">Other</option>
+								</select>
+								<label for="">Occupation</label>
+								<select id="" name="">
+									<option value="0004">Private (Sales and marketing)</option>
+									<option value="0005">Private (other than Sales / marketing)</option>
+									<option value="0006">Self employed / self business</option>
+									<option value="0007">Others</option>
+									<option value="0001">Media / Sports / Armed forces</option>
+									<option value="0002">Government employees</option>
+									<option value="0003">Professionals (CA, Doctor, lawyer)</option>
+								  </select>
+							</div>
+							<div class="clearfix"></div>
+							<div class="btn-next text-center">
+								<a href="#" id="confirm_proposal_details">Continue to vehicle details</a>
+							</div>
+						</div>
+						<li id="vehicle-details-toggle" class="motor-toggle">Vehicle Details</li>
+						<div class="motor-content">
 							<div class="form-detaials">
 								<div class="col-md-6 border-right">
 									<label for="">Registration Number</label>
@@ -261,11 +279,11 @@
 								</div>
 								<div class="clearfix"></div>
 								<div class="btn-next text-center">
-									<a href="#">Continue to Contact Address</a>
+									<a href="#" id="confirm_proposal_one">Continue to Contact Address</a>
 								</div>
 							</div>
 						</div>
-						<li class="motor-toggle">Contact Address</li>
+						<li id="vehicle-details-two" class="motor-toggle">Contact Address</li>
 						<div class="motor-content">
 							<h3>Correspondence Address</h3>
 							<div class="form-detaials">
@@ -296,10 +314,6 @@
 									<a href="#">Continue to Buy</a>
 								</div>
 							</div>
-						</div>
-						<li class="motor-toggle">Buy</li>
-						<div class="motor-content">
-							Test 3
 						</div>
 					</ul>
 				</div>
