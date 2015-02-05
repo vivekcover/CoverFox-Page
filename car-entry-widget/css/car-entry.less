@@ -180,7 +180,6 @@ border-radius: @radius;
 		margin: 30px 0  0 0;
 		min-height:500px;
 		background: @white-color;
-		.car-box-shadow;
 		.top-container{
 				padding:40px;
 				border-bottom: 1px solid @dark-grey;
@@ -420,6 +419,7 @@ border-radius: @radius;
 	.left-side{
 		width:250px;
 		padding: 0;
+		background: @grey;
 	}
 	.box-1{
 		background: @grey;
@@ -453,7 +453,7 @@ border-radius: @radius;
 	}
 	.box-2{
 		background: @white-color;
-		.car-box-shadow;
+		.btn-box-shadow;
 		padding: 21px 14px 18px 40px;
 		border-bottom: 1px solid @dark-grey;
 		min-height: 280px;
@@ -531,9 +531,7 @@ border-radius: @radius;
 		}
 	}
 	.box-3 {
-		.car-box-shadow;
 		padding: 40px 14px 18px 40px;
-		border-bottom: 1px solid @dark-grey;
 		&.quotes-container{
 			background: @grey;
 			min-height: 650px;
@@ -738,7 +736,7 @@ border-radius: @radius;
 							left:-45px;
 							
 						}
-						 &.active{
+						 &.done{
 							&:before{
 							content:"\2713";
 							color:@blue;
@@ -757,7 +755,7 @@ border-radius: @radius;
 						}
 
 						}
-						&.done{
+						&.active{
 							&:before{
 							content:counter(li);
 							counter-increment:li;
